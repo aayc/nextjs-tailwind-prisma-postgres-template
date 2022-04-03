@@ -1,0 +1,17 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// YOUR SCHEMA HERE
+// https://vercel.com/guides/nextjs-prisma-postgres
+// Then `npx prisma db push`
+// Then maybe add data with `npx prisma studio`
+// Then `npx prisma generate`
